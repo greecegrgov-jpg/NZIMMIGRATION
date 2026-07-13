@@ -99,3 +99,111 @@
     margin-bottom:25px;
 
 }
+/* ==========================================
+   DASHBOARD CARDS
+========================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.stat-card{
+
+    background:#ffffff;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    border-left:6px solid #0099CC;
+
+}
+
+.stat-card h3{
+
+    font-size:16px;
+
+    color:#666;
+
+    margin-bottom:12px;
+
+}
+
+.stat-card h2{
+
+    font-size:36px;
+
+    color:#0099CC;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================
+   RECENT RECORDS
+========================================== */
+
+.records-card{
+
+    background:#ffffff;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.records-card h2{
+
+    color:#0099CC;
+
+    margin-bottom:20px;
+
+}
+
+.records-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.records-table th{
+
+    background:#0099CC;
+
+    color:#ffffff;
+
+    padding:14px;
+
+    text-align:left;
+
+}
+
+.records-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #dddddd;
+
+}
+
+.records-table tr:hover{
+
+    background:#f5f9fc;
+
+}
