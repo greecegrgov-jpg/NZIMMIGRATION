@@ -96,3 +96,64 @@ body{
     color:#0099CC;
 
 }
+
+
+/* ===========================================
+   BREADCRUMB
+=========================================== */
+
+.breadcrumb{
+
+    width:100%;
+
+    background:#f2f2f2;
+
+    border-top:1px solid #d9d9d9;
+
+    border-bottom:1px solid #d9d9d9;
+
+}
+
+.breadcrumb-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:12px 30px;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+.breadcrumb a{
+
+    color:#006699;
+
+    text-decoration:none;
+
+}
+
+.breadcrumb a:hover{
+
+    text-decoration:underline;
+
+}
+
+.arrow{
+
+    margin:0 8px;
+
+    color:#999;
+
+}
+
+.current{
+
+    color:#444;
+
+    font-weight:600;
+
+}
