@@ -286,3 +286,696 @@ body{
     margin-bottom:18px;
 
 }
+
+
+/* ===========================================================
+   FORM LAYOUT
+=========================================================== */
+
+.form-area{
+
+    margin-top:40px;
+
+    max-width:900px;
+
+}
+
+
+/* EACH ROW */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:260px 360px;
+
+    align-items:center;
+
+    column-gap:25px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* LABEL */
+
+.form-row label{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.form-row span{
+
+    color:red;
+
+}
+
+
+/* INPUT WRAPPER */
+
+.input-box{
+
+    width:360px;
+
+}
+
+
+/* INPUTS */
+
+.input-box input,
+.input-box select{
+
+    width:100%;
+
+    height:42px;
+
+    border:1px solid #bfc9d3;
+
+    border-radius:4px;
+
+    padding:0 12px;
+
+    font-size:15px;
+
+    background:#ffffff;
+
+}
+
+
+/* FOCUS */
+
+.input-box input:focus,
+.input-box select:focus{
+
+    outline:none;
+
+    border-color:#0099CC;
+
+    box-shadow:0 0 5px rgba(0,153,204,.35);
+
+}
+/* ===========================================================
+   FORM
+=========================================================== */
+
+.form-area{
+
+    margin-top:40px;
+
+    max-width:900px;
+
+}
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:260px 380px;
+
+    align-items:center;
+
+    column-gap:25px;
+
+    margin-bottom:18px;
+
+}
+
+.form-row label{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.form-row span{
+
+    color:#d60000;
+
+}
+
+.input-box{
+
+    width:380px;
+
+}
+
+.input-box input,
+.input-box select{
+
+    width:100%;
+
+    height:42px;
+
+    border:1px solid #bfc9d3;
+
+    border-radius:3px;
+
+    background:#ffffff;
+
+    padding:0 12px;
+
+    font-size:15px;
+
+    transition:.25s;
+
+}
+
+.input-box input:focus,
+.input-box select:focus{
+
+    outline:none;
+
+    border-color:#0099CC;
+
+    box-shadow:0 0 5px rgba(0,153,204,.30);
+
+}
+
+input[type="date"]{
+
+    cursor:pointer;
+
+}
+
+input::placeholder{
+
+    color:#999999;
+
+}
+
+
+/* ===========================================================
+   CONSENT
+=========================================================== */
+
+.consent-box{
+
+    margin-top:35px;
+
+    margin-left:260px;
+
+}
+
+.consent-box label{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    font-size:16px;
+
+    color:#444;
+
+    cursor:pointer;
+
+}
+
+.consent-box input{
+
+    width:18px;
+
+    height:18px;
+
+    margin-top:2px;
+
+}
+
+
+/* ===========================================================
+   BUTTON
+=========================================================== */
+
+.button-area{
+
+    margin-top:35px;
+
+    margin-left:260px;
+
+}
+
+.check-btn{
+
+    background:#0099CC;
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:13px 32px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    border-radius:3px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.check-btn:hover{
+
+    background:#0079a8;
+
+}
+
+.check-btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* ===========================================================
+   RESULT
+=========================================================== */
+
+.result-area{
+
+    margin-top:40px;
+
+}
+
+.success{
+
+    background:#eaf8ed;
+
+    border:1px solid #56b96f;
+
+    color:#16662b;
+
+    padding:18px;
+
+    border-radius:4px;
+
+    margin-bottom:25px;
+
+}
+
+.error{
+
+    background:#fff1f1;
+
+    border:1px solid #d84d4d;
+
+    color:#b60000;
+
+    padding:18px;
+
+    border-radius:4px;
+
+}
+
+
+/* ===========================================================
+   VERIFICATION CARD
+=========================================================== */
+
+.verification-card{
+
+    background:#f8fbfd;
+
+    border:1px solid #d7e5ee;
+
+    border-radius:5px;
+
+    padding:25px;
+
+    margin-top:30px;
+
+}
+
+.verification-card h2{
+
+    color:#0099CC;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+    font-weight:500;
+
+}
+
+.verification-grid{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    row-gap:14px;
+
+    column-gap:20px;
+
+}
+
+.verification-grid strong{
+
+    color:#555;
+
+}
+
+.verification-grid span{
+
+    color:#222;
+
+}
+
+
+/* ===========================================================
+   PDF VIEWER
+=========================================================== */
+
+.result-area iframe{
+
+    width:100%;
+
+    height:900px;
+
+    border:1px solid #d7d7d7;
+
+    border-radius:4px;
+
+    background:#ffffff;
+
+    margin-top:25px;
+
+}
+
+
+/* ===========================================================
+   PRINT BUTTON
+=========================================================== */
+
+.print-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#0099CC;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    padding:12px 28px;
+
+    border-radius:4px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.print-btn:hover{
+
+    background:#0079a8;
+
+}
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
+@media (max-width:1200px){
+
+    .main-container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #d7d7d7;
+    }
+
+    .content{
+        width:100%;
+        padding:30px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        row-gap:10px;
+    }
+
+    .input-box{
+        width:100%;
+    }
+
+    .consent-box,
+    .button-area{
+        margin-left:0;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .header{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        gap:20px;
+
+        height:auto;
+
+        padding:20px;
+
+    }
+
+    .logo{
+
+        width:260px;
+
+    }
+
+    .contact{
+
+        justify-content:center;
+
+        width:100%;
+
+    }
+
+    .page-title{
+
+        font-size:34px;
+
+    }
+
+    .intro{
+
+        font-size:16px;
+
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    .content{
+
+        padding:20px;
+
+    }
+
+    .page-title{
+
+        font-size:28px;
+
+    }
+
+    .check-btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ===========================================================
+   HOVER
+=========================================================== */
+
+.sidebar li{
+
+    transition:.25s;
+
+}
+
+.sidebar li:hover{
+
+    background:#cfeaf7;
+
+}
+
+input:hover,
+select:hover{
+
+    border-color:#0099CC;
+
+}
+
+
+/* ===========================================================
+   ANIMATION
+=========================================================== */
+
+.content{
+
+    animation:fadeIn .35s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eeeeee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0099CC;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#0079a8;
+
+}
+
+
+/* ===========================================================
+   PRINT
+=========================================================== */
+
+@media print{
+
+    .header,
+    .breadcrumb,
+    .sidebar,
+    .form-area,
+    .contact,
+    .check-btn{
+
+        display:none !important;
+
+    }
+
+    .content{
+
+        width:100%;
+
+        padding:0;
+
+        margin:0;
+
+    }
+
+}
+
+
+/* ===========================================================
+   FINAL POLISH
+=========================================================== */
+
+button,
+input,
+select{
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+}
+
+.success::before{
+
+    content:"✔ ";
+
+}
+
+.error::before{
+
+    content:"✖ ";
+
+}
+
+.check-btn,
+.print-btn{
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+}
+
+.verification-card{
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    user-select:none;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
