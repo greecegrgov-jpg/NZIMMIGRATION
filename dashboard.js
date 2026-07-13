@@ -1,204 +1,178 @@
 // ======================================================
 // NZL VISA ADMIN DASHBOARD
+// PART 1
 // ======================================================
 
+// ---------------------------
+// START
+// ---------------------------
+
 document.addEventListener("DOMContentLoaded", function () {
+
+    initializeDashboard();
+
+});
+
+
+// ---------------------------
+// INITIALIZE
+// ---------------------------
+
+function initializeDashboard() {
 
     const addVisa = document.getElementById("addVisa");
     const records = document.getElementById("records");
     const search = document.getElementById("search");
     const logout = document.getElementById("logout");
 
-    if(addVisa){
+    if (addVisa) {
 
         addVisa.addEventListener("click", showAddVisaForm);
 
     }
 
-    if(records){
+    if (records) {
 
         records.addEventListener("click", showRecords);
 
     }
 
-    if(search){
+    if (search) {
 
         search.addEventListener("click", showSearch);
 
     }
 
-    if(logout){
+    if (logout) {
 
         logout.addEventListener("click", logoutAdmin);
 
     }
 
-});
-// ======================================================
-// ADD NEW VISA
-// ======================================================
+}
 
-function showAddVisaForm(){
+
+// ---------------------------
+// DASHBOARD HOME
+// ---------------------------
+
+function showDashboard() {
 
     document.getElementById("pageContent").innerHTML = `
 
-        <h1>Add New Visa</h1>
+        <h1>Dashboard</h1>
 
-        <div class="card">
+        <div class="cards">
 
-            <form class="admin-form">
+            <div class="stat-card">
 
-                <div class="admin-row">
+                <h3>Total Visa Records</h3>
 
-                    <label>Family Name</label>
+                <h2>1</h2>
 
-                    <input type="text" id="familyName">
+            </div>
 
-                </div>
+            <div class="stat-card">
 
-                <div class="admin-row">
+                <h3>Uploaded PDFs</h3>
 
-                    <label>Nationality</label>
+                <h2>1</h2>
 
-                    <input type="text" id="nationality">
+            </div>
 
-                </div>
+            <div class="stat-card">
 
-                <div class="admin-row">
+                <h3>Valid Records</h3>
 
-                    <label>Passport Number</label>
+                <h2>1</h2>
 
-                    <input type="text" id="passportNumber">
+            </div>
 
-                </div>
+        </div>
 
-                <div class="admin-row">
+        <div class="records-card">
 
-                    <label>Date of Birth</label>
+            <h2>Recent Visa Records</h2>
 
-                    <input type="date" id="dob">
+            <table class="records-table">
 
-                </div>
+                <thead>
 
-                <div class="admin-row">
+                    <tr>
 
-                    <label>Gender</label>
+                        <th>Family Name</th>
 
-                    <select id="gender">
+                        <th>Passport</th>
 
-                        <option>Male</option>
+                        <th>Nationality</th>
 
-                        <option>Female</option>
+                        <th>Status</th>
 
-                    </select>
+                    </tr>
 
-                </div>
+                </thead>
 
-                <div class="admin-row">
+                <tbody>
 
-                    <label>Visa Start Date</label>
+                    <tr>
 
-                    <input type="date" id="visaStart">
+                        <td>Husnain Ali</td>
 
-                </div>
+                        <td>SU1819363</td>
 
-                <div class="admin-row">
+                        <td>Pakistan</td>
 
-                    <label>PDF File</label>
+                        <td style="color:green;font-weight:bold;">
 
-                    <input type="file" id="pdf" accept=".pdf">
+                            VALID
 
-                </div>
+                        </td>
 
-                <button
-                    type="button"
-                    class="save-btn"
-                    id="saveVisaBtn">
+                    </tr>
 
-                    Save Visa
+                </tbody>
 
-                </button>
-
-                <div id="saveMessage"></div>
-
-            </form>
+            </table>
 
         </div>
 
     `;
 
-    document
-        .getElementById("saveVisaBtn")
-        .addEventListener("click", saveVisa);
+}
+
+
+// ---------------------------
+// RECORDS
+// ---------------------------
+
+function showRecords() {
+
+    alert("Visa Records page will be built in Part 3.");
 
 }
 
 
+// ---------------------------
+// SEARCH
+// ---------------------------
 
-// ======================================================
-// SAVE VISA
-// ======================================================
+function showSearch() {
 
-function saveVisa(){
+    alert("Search page will be built in Part 3.");
 
-    const familyName=document.getElementById("familyName").value.trim();
+}
 
-    const nationality=document.getElementById("nationality").value.trim();
 
-    const passportNumber=document.getElementById("passportNumber").value.trim();
+// ---------------------------
+// LOGOUT
+// ---------------------------
 
-    const dob=document.getElementById("dob").value;
+function logoutAdmin() {
 
-    const gender=document.getElementById("gender").value;
+    if (confirm("Are you sure you want to logout?")) {
 
-    const visaStart=document.getElementById("visaStart").value;
-
-    const pdf=document.getElementById("pdf").files[0];
-
-    const message=document.getElementById("saveMessage");
-
-    if(
-
-        familyName==="" ||
-
-        nationality==="" ||
-
-        passportNumber==="" ||
-
-        dob==="" ||
-
-        visaStart===""
-
-    ){
-
-        message.style.color="red";
-
-        message.innerHTML="Please complete all required fields.";
-
-        return;
+        window.location.href = "admin.html";
 
     }
-
-    message.style.color="green";
-
-    message.innerHTML="Visa record is ready to save.";
-
-    console.log({
-
-        familyName,
-
-        nationality,
-
-        passportNumber,
-
-        dob,
-
-        gender,
-
-        visaStart,
-
-        pdf
-
-    });
 
 }
