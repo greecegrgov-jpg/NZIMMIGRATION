@@ -1,49 +1,106 @@
 // ======================================
-// ADMIN LOGIN
+// ADMIN PANEL
 // ======================================
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const loginButton = document.getElementById("loginBtn");
+    const addVisa = document.getElementById("addVisa");
 
-    loginButton.addEventListener("click", login);
+    if(addVisa){
+
+        addVisa.addEventListener("click", showAddVisaForm);
+
+    }
 
 });
 
 
 // ======================================
-// LOGIN FUNCTION
+// ADD VISA FORM
 // ======================================
 
-function login() {
+function showAddVisaForm(){
 
-    const username = document.getElementById("username").value.trim();
+    document.getElementById("pageContent").innerHTML = `
 
-    const password = document.getElementById("password").value.trim();
+        <h1>Add New Visa</h1>
 
-    const message = document.getElementById("message");
+        <div class="card">
 
+            <form class="admin-form">
 
-    if (username === "admin" && password === "123456") {
+                <div class="admin-row">
 
-        message.style.color = "green";
+                    <label>Family Name</label>
 
-        message.innerHTML = "Login successful...";
+                    <input type="text" id="familyName">
 
-        setTimeout(function () {
+                </div>
 
-            window.location.href = "dashboard.html";
+                <div class="admin-row">
 
-        }, 800);
+                    <label>Nationality</label>
 
-    }
+                    <input type="text" id="nationality">
 
-    else {
+                </div>
 
-        message.style.color = "red";
+                <div class="admin-row">
 
-        message.innerHTML = "Incorrect username or password.";
+                    <label>Passport Number</label>
 
-    }
+                    <input type="text" id="passportNumber">
+
+                </div>
+
+                <div class="admin-row">
+
+                    <label>Date of Birth</label>
+
+                    <input type="date" id="dob">
+
+                </div>
+
+                <div class="admin-row">
+
+                    <label>Gender</label>
+
+                    <select id="gender">
+
+                        <option>Male</option>
+
+                        <option>Female</option>
+
+                    </select>
+
+                </div>
+
+                <div class="admin-row">
+
+                    <label>Visa Start Date</label>
+
+                    <input type="date" id="visaStart">
+
+                </div>
+
+                <div class="admin-row">
+
+                    <label>PDF File</label>
+
+                    <input type="file" id="pdf">
+
+                </div>
+
+                <button type="button" class="save-btn">
+
+                    Save Visa
+
+                </button>
+
+            </form>
+
+        </div>
+
+    `;
 
 }
