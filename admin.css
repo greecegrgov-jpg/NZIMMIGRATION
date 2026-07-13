@@ -248,3 +248,267 @@ body.login-page{
     margin-bottom:30px;
 
 }
+/* ==========================================================
+   DASHBOARD CARDS
+========================================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.stat-card{
+
+    background:#ffffff;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    border-left:5px solid #0099CC;
+
+}
+
+.stat-card h3{
+
+    color:#666;
+
+    font-size:16px;
+
+    margin-bottom:12px;
+
+    font-weight:500;
+
+}
+
+.stat-card h2{
+
+    color:#0099CC;
+
+    font-size:38px;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================================
+   CONTENT CARD
+========================================================== */
+
+.card{
+
+    background:#ffffff;
+
+    border-radius:8px;
+
+    padding:30px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================================================
+   RECORDS CARD
+========================================================== */
+
+.records-card{
+
+    background:#ffffff;
+
+    border-radius:8px;
+
+    padding:30px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.records-card h2{
+
+    color:#0099CC;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.records-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.records-table th{
+
+    background:#0099CC;
+
+    color:#ffffff;
+
+    padding:15px;
+
+    text-align:left;
+
+    font-size:15px;
+
+}
+
+.records-table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #dddddd;
+
+    font-size:15px;
+
+}
+
+.records-table tr:hover{
+
+    background:#f7fbfd;
+
+}
+
+
+/* ==========================================================
+   ADMIN FORM
+========================================================== */
+
+.admin-form{
+
+    max-width:850px;
+
+}
+
+.admin-row{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.admin-row label{
+
+    width:240px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.admin-row input,
+
+.admin-row select{
+
+    flex:1;
+
+    height:46px;
+
+    border:1px solid #cfd8dc;
+
+    border-radius:4px;
+
+    padding:0 14px;
+
+    font-size:15px;
+
+    background:#ffffff;
+
+}
+
+.admin-row input:focus,
+
+.admin-row select:focus{
+
+    outline:none;
+
+    border-color:#0099CC;
+
+    box-shadow:0 0 6px rgba(0,153,204,.25);
+
+}
+
+
+/* ==========================================================
+   FILE INPUT
+========================================================== */
+
+input[type="file"]{
+
+    padding:10px;
+
+    height:auto;
+
+}
+
+
+/* ==========================================================
+   SAVE BUTTON
+========================================================== */
+
+.save-btn{
+
+    background:#0099CC;
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:4px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.save-btn:hover{
+
+    background:#007cab;
+
+}
+
+
+/* ==========================================================
+   SAVE MESSAGE
+========================================================== */
+
+#saveMessage{
+
+    margin-top:20px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
