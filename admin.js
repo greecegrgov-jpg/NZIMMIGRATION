@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const addVisa = document.getElementById("addVisa");
 
-    if(addVisa){
+    if (addVisa) {
 
         addVisa.addEventListener("click", showAddVisaForm);
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ADD VISA FORM
 // ======================================
 
-function showAddVisaForm(){
+function showAddVisaForm() {
 
     document.getElementById("pageContent").innerHTML = `
 
@@ -87,20 +87,92 @@ function showAddVisaForm(){
 
                     <label>PDF File</label>
 
-                    <input type="file" id="pdf">
+                    <input type="file" id="pdf" accept=".pdf">
 
                 </div>
 
-                <button type="button" class="save-btn">
+                <button
+                    type="button"
+                    class="save-btn"
+                    id="saveVisaBtn">
 
                     Save Visa
 
                 </button>
+
+                <div id="saveMessage"></div>
 
             </form>
 
         </div>
 
     `;
+
+    document
+        .getElementById("saveVisaBtn")
+        .addEventListener("click", saveVisa);
+
+}
+
+
+// ======================================
+// SAVE VISA
+// ======================================
+
+function saveVisa() {
+
+    const familyName = document.getElementById("familyName").value.trim();
+
+    const nationality = document.getElementById("nationality").value.trim();
+
+    const passportNumber = document.getElementById("passportNumber").value.trim();
+
+    const dob = document.getElementById("dob").value;
+
+    const gender = document.getElementById("gender").value;
+
+    const visaStart = document.getElementById("visaStart").value;
+
+    const pdf = document.getElementById("pdf").files[0];
+
+    const message = document.getElementById("saveMessage");
+
+    if (
+        familyName === "" ||
+        nationality === "" ||
+        passportNumber === "" ||
+        dob === "" ||
+        visaStart === ""
+    ) {
+
+        message.style.color = "red";
+
+        message.innerHTML = "Please complete all required fields.";
+
+        return;
+
+    }
+
+    message.style.color = "green";
+
+    message.innerHTML = "Visa record saved successfully.";
+
+    console.log({
+
+        familyName,
+
+        nationality,
+
+        passportNumber,
+
+        dob,
+
+        gender,
+
+        visaStart,
+
+        pdf
+
+    });
 
 }
