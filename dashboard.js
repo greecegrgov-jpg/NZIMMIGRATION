@@ -141,39 +141,194 @@ function showDashboard() {
 }
 
 
-// ---------------------------
-// RECORDS
-// ---------------------------
+// ======================================================
+// VISA RECORDS
+// ======================================================
 
-function showRecords() {
+function showRecords(){
 
-    alert("Visa Records page will be built in Part 3.");
+    document.getElementById("pageContent").innerHTML = `
+
+        <h1>Visa Records</h1>
+
+        <div class="records-card">
+
+            <table class="records-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Family Name</th>
+
+                        <th>Nationality</th>
+
+                        <th>Passport</th>
+
+                        <th>Date of Birth</th>
+
+                        <th>Gender</th>
+
+                        <th>Visa Start</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Husnain Ali</td>
+
+                        <td>Pakistan</td>
+
+                        <td>SU1819363</td>
+
+                        <td>31-01-1993</td>
+
+                        <td>Male</td>
+
+                        <td>13-07-2026</td>
+
+                        <td style="color:green;font-weight:bold;">
+
+                            VALID
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    `;
 
 }
 
 
-// ---------------------------
+// ======================================================
 // SEARCH
-// ---------------------------
+// ======================================================
 
-function showSearch() {
+function showSearch(){
 
-    alert("Search page will be built in Part 3.");
+    document.getElementById("pageContent").innerHTML = `
+
+        <h1>Search Visa</h1>
+
+        <div class="card">
+
+            <div class="admin-row">
+
+                <label>Passport Number</label>
+
+                <input
+                    type="text"
+                    id="searchPassport"
+                    placeholder="Enter Passport Number">
+
+            </div>
+
+            <button
+                class="save-btn"
+                id="searchBtn">
+
+                Search
+
+            </button>
+
+            <div id="searchResult" style="margin-top:25px;"></div>
+
+        </div>
+
+    `;
+
+    document
+        .getElementById("searchBtn")
+        .addEventListener("click", function(){
+
+            const passport=document
+                .getElementById("searchPassport")
+                .value
+                .trim();
+
+            const result=document
+                .getElementById("searchResult");
+
+            if(passport==="SU1819363"){
+
+                result.innerHTML=`
+
+                    <h3 style="color:green;">
+
+                        ✔ Visa Found
+
+                    </h3>
+
+                    <p>
+
+                        <strong>Name:</strong>
+
+                        Husnain Ali
+
+                    </p>
+
+                    <p>
+
+                        <strong>Nationality:</strong>
+
+                        Pakistan
+
+                    </p>
+
+                `;
+
+            }
+
+            else{
+
+                result.innerHTML=`
+
+                    <h3 style="color:red;">
+
+                        No record found.
+
+                    </h3>
+
+                `;
+
+            }
+
+        });
 
 }
 
 
-// ---------------------------
+// ======================================================
 // LOGOUT
-// ---------------------------
+// ======================================================
 
-function logoutAdmin() {
+function logoutAdmin(){
 
-    if (confirm("Are you sure you want to logout?")) {
+    const answer=confirm(
 
-        window.location.href = "admin.html";
+        "Do you want to logout?"
+
+    );
+
+    if(answer){
+
+        window.location.href="admin.html";
 
     }
+
+}
 
 }
 // ======================================================
