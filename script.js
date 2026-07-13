@@ -1,5 +1,11 @@
-document.querySelector(".check-btn").addEventListener("click", function(){
+document.addEventListener("DOMContentLoaded", function () {
 
-    alert("Perfect! The button works.");
+    const button = document.querySelector(".check-btn");
+
+    button.addEventListener("click", function () {
+
+        alert("Perfect! The button works.");
+
+    });
 
 });
