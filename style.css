@@ -1,6 +1,6 @@
-/* ===============================
+/* ===========================================
    RESET
-================================== */
+=========================================== */
 
 *{
     margin:0;
@@ -9,19 +9,19 @@
 }
 
 body{
-    font-family:Segoe UI, Arial, sans-serif;
+    font-family:"Segoe UI", Arial, sans-serif;
     background:#ffffff;
 }
 
-/* ===============================
+/* ===========================================
    HEADER
-================================== */
+=========================================== */
 
 .header{
 
     width:100%;
 
-    height:100px;
+    height:140px;
 
     background:#0099CC;
 
@@ -31,11 +31,13 @@ body{
 
     align-items:center;
 
-    padding:0 40px;
+    padding:0 30px;
 
 }
 
-/* LEFT */
+/* ===========================================
+   LEFT SIDE
+=========================================== */
 
 .logo-section{
 
@@ -47,58 +49,49 @@ body{
 
 .logo{
 
-    width:300px;
+    width:420px;
 
     height:auto;
 
-    object-fit:contain;
+    display:block;
 
 }
 
-.brand h1{
+/* ===========================================
+   RIGHT SIDE
+=========================================== */
 
-    color:white;
+.contact{
 
-    font-size:34px;
+    display:flex;
 
-    font-weight:700;
-
-    line-height:1;
-
-}
-
-.brand p{
-
-    color:white;
-
-    font-size:16px;
-
-    margin-top:6px;
+    align-items:center;
 
 }
-
-/* RIGHT */
 
 .contact a{
 
-    color:white;
+    color:#ffffff;
 
     text-decoration:none;
 
-    font-size:11px;
+    font-size:12px;
 
-    font-weight:400;
+    font-weight:500;
 
-    padding:3px 8px;
+    padding:5px 12px;
 
-    border:1px solid white;
+    border:1px solid #ffffff;
 
-    border-radius:3px;
+    border-radius:4px;
+
+    transition:0.3s;
 
 }
+
 .contact a:hover{
 
-    background:white;
+    background:#ffffff;
 
     color:#0099CC;
 
