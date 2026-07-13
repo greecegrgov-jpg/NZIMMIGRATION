@@ -157,3 +157,78 @@ body{
     font-weight:600;
 
 }
+/* ===========================================
+   MAIN LAYOUT
+=========================================== */
+
+.main-container{
+
+    display:flex;
+
+    min-height:800px;
+
+}
+
+/* ===========================================
+   LEFT SIDEBAR
+=========================================== */
+
+.sidebar{
+
+    width:260px;
+
+    background:#e6f3fb;
+
+    border-right:1px solid #cfcfcf;
+
+    padding:20px;
+
+}
+
+.sidebar h3{
+
+    color:#0087c8;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin-bottom:14px;
+
+    font-size:15px;
+
+    color:#333;
+
+    cursor:pointer;
+
+}
+
+.sidebar li:hover{
+
+    color:#0087c8;
+
+}
+
+/* ===========================================
+   RIGHT CONTENT
+=========================================== */
+
+.content{
+
+    flex:1;
+
+    padding:30px;
+
+    background:#ffffff;
+
+}
