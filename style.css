@@ -85,17 +85,15 @@ body{
 
     text-decoration:none;
 
-    font-size:12px;
+    font-size:11px;
 
-    font-weight:500;
+    font-weight:400;
 
-    padding:4px 10px;
+    padding:3px 8px;
 
     border:1px solid white;
 
-    border-radius:4px;
-
-    transition:.3s;
+    border-radius:3px;
 
 }
 .contact a:hover{
