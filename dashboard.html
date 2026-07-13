@@ -3,109 +3,131 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NZL Visa Dashboard</title>
+    <title>NZL Visa Dashboard</title>
 
-<link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="admin.css">
 
 </head>
 
 <body>
 
-<div class="dashboard">
+    <div class="dashboard">
 
-    <div class="admin-sidebar">
+        <!-- =========================
+             LEFT SIDEBAR
+        ========================== -->
 
-        <h2>NZL Visa</h2>
+        <div class="admin-sidebar">
 
-        <ul>
+            <h2>NZL Visa</h2>
 
-            <li id="addVisa">➕ Add New Visa</li>
+            <ul>
 
-            <li id="records">📋 Visa Records</li>
+                <li id="addVisa">➕ Add New Visa</li>
 
-            <li id="search">🔍 Search</li>
+                <li id="records">📋 Visa Records</li>
 
-            <li id="logout">🚪 Logout</li>
+                <li id="search">🔍 Search</li>
 
-        </ul>
+                <li id="logout">🚪 Logout</li>
 
-    </div>
-
-<div class="admin-content">
-
-    <h1>Dashboard</h1>
-
-    <div class="cards">
-
-        <div class="stat-card">
-
-            <h3>Total Visa Records</h3>
-
-            <h2>1</h2>
+            </ul>
 
         </div>
 
-        <div class="stat-card">
+        <!-- =========================
+             RIGHT CONTENT
+        ========================== -->
 
-            <h3>Uploaded PDFs</h3>
+        <div class="admin-content">
 
-            <h2>1</h2>
+            <div id="pageContent">
 
-        </div>
+                <h1>Dashboard</h1>
 
-        <div class="stat-card">
+                <div class="cards">
 
-            <h3>Valid Records</h3>
+                    <div class="stat-card">
 
-            <h2>1</h2>
+                        <h3>Total Visa Records</h3>
+
+                        <h2>1</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3>Uploaded PDFs</h3>
+
+                        <h2>1</h2>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h3>Valid Records</h3>
+
+                        <h2>1</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="records-card">
+
+                    <h2>Recent Visa Records</h2>
+
+                    <table class="records-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Family Name</th>
+
+                                <th>Passport</th>
+
+                                <th>Nationality</th>
+
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>Husnain Ali</td>
+
+                                <td>SU1819363</td>
+
+                                <td>Pakistan</td>
+
+                                <td style="color:green;font-weight:bold;">
+                                    VALID
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
-    <div class="records-card">
-
-        <h2>Recent Visa Records</h2>
-
-        <table class="records-table">
-
-            <tr>
-
-                <th>Family Name</th>
-
-                <th>Passport</th>
-
-                <th>Nationality</th>
-
-                <th>Status</th>
-
-            </tr>
-
-            <tr>
-
-                <td>Husnain Ali</td>
-
-                <td>SU1819363</td>
-
-                <td>Pakistan</td>
-
-                <td style="color:green;font-weight:bold;">
-                    VALID
-                </td>
-
-            </tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-</div>
+    <script src="admin.js"></script>
 
 </body>
 
