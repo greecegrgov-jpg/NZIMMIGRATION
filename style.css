@@ -165,7 +165,7 @@ body{
 
     display:flex;
 
-    min-height:800px;
+    min-height:100%;
 
 }
 
@@ -177,11 +177,15 @@ body{
 
     width:260px;
 
-    background:#e6f3fb;
+    min-height:900px;
 
-    border-right:1px solid #cfcfcf;
+    background:#dff1fb;
+
+    border-right:2px solid #d3d3d3;
 
     padding:20px;
+
+    flex-shrink:0;
 
 }
 
@@ -227,8 +231,10 @@ body{
 
     flex:1;
 
-    padding:30px;
+    min-height:900px;
 
     background:#ffffff;
+
+    padding:30px;
 
 }
