@@ -512,3 +512,325 @@ input[type="file"]{
     font-weight:600;
 
 }
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
+
+@media (max-width:1200px){
+
+    .cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .dashboard{
+
+        flex-direction:column;
+
+    }
+
+    .admin-sidebar{
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    .admin-content{
+
+        padding:25px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .admin-row{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .admin-row label{
+
+        width:100%;
+
+        margin-bottom:8px;
+
+    }
+
+    .admin-row input,
+
+    .admin-row select{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .admin-content h1{
+
+        font-size:30px;
+
+    }
+
+    .records-table{
+
+        display:block;
+
+        overflow-x:auto;
+
+    }
+
+}
+
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.card,
+
+.records-card,
+
+.stat-card{
+
+    animation:fadeIn .35s ease;
+
+}
+
+
+/* ==========================================================
+   HOVER EFFECTS
+========================================================== */
+
+.stat-card{
+
+    transition:.25s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.records-table tbody tr{
+
+    transition:.2s;
+
+}
+
+.records-table tbody tr:hover{
+
+    background:#eef8fc;
+
+}
+
+.save-btn{
+
+    transition:.25s;
+
+}
+
+.save-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.admin-sidebar li{
+
+    user-select:none;
+
+}
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eeeeee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0099CC;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#007cab;
+
+}
+
+
+/* ==========================================================
+   PRINT
+========================================================== */
+
+@media print{
+
+    .admin-sidebar{
+
+        display:none;
+
+    }
+
+    .admin-content{
+
+        padding:0;
+
+        width:100%;
+
+    }
+
+    .save-btn{
+
+        display:none;
+
+    }
+
+}
+
+
+/* ==========================================================
+   FINAL POLISH
+========================================================== */
+
+button,
+
+input,
+
+select{
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+}
+
+input,
+
+select{
+
+    transition:.25s;
+
+}
+
+input:hover,
+
+select:hover{
+
+    border-color:#0099CC;
+
+}
+
+.card,
+
+.records-card,
+
+.stat-card{
+
+    border:1px solid #e5e5e5;
+
+}
+
+.admin-content{
+
+    min-height:100vh;
+
+}
+
+.admin-sidebar{
+
+    position:sticky;
+
+    top:0;
+
+    height:100vh;
+
+}
+
+.admin-sidebar h2{
+
+    letter-spacing:.5px;
+
+}
+
+.records-table th:first-child{
+
+    border-top-left-radius:5px;
+
+}
+
+.records-table th:last-child{
+
+    border-top-right-radius:5px;
+
+}
+
+.save-btn{
+
+    box-shadow:0 4px 10px rgba(0,0,0,.12);
+
+}
+
+.stat-card h2{
+
+    user-select:none;
+
+}
+
+.logo{
+
+    user-select:none;
+
+}
