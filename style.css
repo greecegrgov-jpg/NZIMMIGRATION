@@ -1,776 +1,288 @@
 /* ===========================================================
-   FORM
+   RESET
 =========================================================== */
 
-.form-area{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    margin-top:40px;
+body{
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:#ffffff;
+    color:#333;
+}
 
-    max-width:850px;
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.header{
+
+    width:100%;
+
+    height:120px;
+
+    background:#0099CC;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 35px;
 
 }
 
-.form-row{
+
+/* ===========================================================
+   LOGO
+=========================================================== */
+
+.logo-section{
 
     display:flex;
 
     align-items:center;
 
-    margin-bottom:22px;
+}
+
+.logo{
+
+    width:340px;
+
+    height:auto;
+
+    display:block;
 
 }
 
-.form-row label{
-
-    width:260px;
-
-    font-size:17px;
-
-    font-weight:600;
-
-    color:#444;
-
-}
-
-.form-row span{
-
-    color:#d60000;
-
-}
-
-.form-row input,
-.form-row select{
-
-    flex:1;
-
-    height:44px;
-
-    border:1px solid #bfc9d3;
-
-    border-radius:4px;
-
-    padding:0 12px;
-
-    font-size:15px;
-
-    background:#ffffff;
-
-    transition:.25s;
-
-}
 
 /* ===========================================================
-   INPUT FOCUS
+   CONTACT BUTTON
 =========================================================== */
 
-.form-row input:focus,
-.form-row select:focus{
-
-    outline:none;
-
-    border-color:#0099CC;
-
-    box-shadow:0 0 5px rgba(0,153,204,.35);
-
-}
-
-/* ===========================================================
-   DATE INPUT
-=========================================================== */
-
-input[type="date"]{
-
-    cursor:pointer;
-
-}
-
-/* ===========================================================
-   PLACEHOLDER
-=========================================================== */
-
-input::placeholder{
-
-    color:#999;
-
-}
-
-/* ===========================================================
-   CHECKBOX
-=========================================================== */
-
-.checkbox-row{
-
-    margin:35px 0;
+.contact{
 
     display:flex;
 
-    align-items:flex-start;
-
-    gap:10px;
-
-    font-size:15px;
-
-    color:#444;
-
-    line-height:1.6;
+    align-items:center;
 
 }
 
-.checkbox-row input{
-
-    margin-top:3px;
-
-    width:18px;
-
-    height:18px;
-
-    cursor:pointer;
-
-}
-
-/* ===========================================================
-   BUTTON
-=========================================================== */
-
-.check-btn{
-
-    background:#0099CC;
+.contact a{
 
     color:#ffffff;
 
-    border:none;
+    text-decoration:none;
 
-    padding:14px 32px;
+    border:1px solid #ffffff;
 
-    font-size:17px;
-
-    font-weight:600;
+    padding:7px 16px;
 
     border-radius:4px;
 
-    cursor:pointer;
-
-    transition:.25s;
-
-}
-
-.check-btn:hover{
-
-    background:#007cab;
-
-}
-
-.check-btn:active{
-
-    transform:scale(.98);
-
-}
-
-/* ===========================================================
-   RESULT AREA
-=========================================================== */
-
-.result-area{
-
-    margin-top:40px;
-
-}
-
-/* ===========================================================
-   SUCCESS PANEL
-=========================================================== */
-
-.success{
-
-    background:#eaf8ed;
-
-    border:1px solid #53b96d;
-
-    color:#1d6b31;
-
-    padding:18px;
-
-    border-radius:5px;
-
-    margin-bottom:25px;
-
-    font-size:18px;
-
-    font-weight:600;
-
-}
-
-/* ===========================================================
-   ERROR PANEL
-=========================================================== */
-
-.error{
-
-    background:#fff0f0;
-
-    border:1px solid #e34b4b;
-
-    color:#b50000;
-
-    padding:18px;
-
-    border-radius:5px;
-
-    font-size:18px;
-
-    font-weight:600;
-
-}
-
-/* ===========================================================
-   PDF VIEWER
-=========================================================== */
-
-.result-area iframe{
-
-    width:100%;
-
-    height:900px;
-
-    border:1px solid #d6d6d6;
-
-    border-radius:4px;
-
-    background:#ffffff;
-
-}
-
-/* ===========================================================
-   PRINT BUTTON
-=========================================================== */
-
-.print-btn{
-
-    display:inline-block;
-
-    margin-top:25px;
-
-    background:#0099CC;
-
-    color:#ffffff;
-
-    padding:12px 30px;
-
-    border-radius:4px;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    transition:.25s;
-
-}
-
-.print-btn:hover{
-
-    background:#007cab;
-
-}
-
-/* ===========================================================
-   VERIFICATION CARD
-=========================================================== */
-
-.verification-card{
-
-    background:#f8fbfd;
-
-    border:1px solid #d7e5ee;
-
-    border-radius:6px;
-
-    padding:25px;
-
-    margin-bottom:30px;
-
-}
-
-.verification-card h2{
-
-    color:#0099CC;
-
-    font-size:24px;
-
-    margin-bottom:20px;
+    font-size:12px;
 
     font-weight:500;
 
-}
-
-.verification-grid{
-
-    display:grid;
-
-    grid-template-columns:220px 1fr;
-
-    row-gap:16px;
-
-    column-gap:15px;
+    transition:.25s;
 
 }
 
-.verification-grid strong{
+.contact a:hover{
 
-    color:#555;
-
-}
-
-.verification-grid span{
-
-    color:#222;
-
-}
-
-/* ===========================================================
-   LOADING
-=========================================================== */
-
-.loading{
-
-    text-align:center;
-
-    padding:50px;
+    background:#ffffff;
 
     color:#0099CC;
 
-    font-size:22px;
+}
+
+
+/* ===========================================================
+   BREADCRUMB
+=========================================================== */
+
+.breadcrumb{
+
+    width:100%;
+
+    background:#f5f5f5;
+
+    border-top:1px solid #d8d8d8;
+
+    border-bottom:1px solid #d8d8d8;
+
+}
+
+.breadcrumb-container{
+
+    max-width:1600px;
+
+    margin:auto;
+
+    padding:12px 35px;
+
+    font-size:14px;
+
+}
+
+.breadcrumb a{
+
+    color:#006699;
+
+    text-decoration:none;
+
+}
+
+.breadcrumb a:hover{
+
+    text-decoration:underline;
+
+}
+
+.arrow{
+
+    margin:0 8px;
+
+    color:#888;
+
+}
+
+.current{
+
+    color:#555;
 
     font-weight:600;
 
 }
 
+
 /* ===========================================================
-   NO RECORD
+   MAIN LAYOUT
 =========================================================== */
 
-.no-record{
+.main-container{
 
-    text-align:center;
+    display:flex;
 
-    padding:40px;
+    width:100%;
 
-    color:#c10000;
+    min-height:900px;
 
-    font-size:22px;
+}
+
+
+/* ===========================================================
+   SIDEBAR
+=========================================================== */
+
+.sidebar{
+
+    width:260px;
+
+    background:#dff1fb;
+
+    border-right:1px solid #cccccc;
+
+    padding:25px;
+
+    flex-shrink:0;
+
+}
+
+.sidebar h3{
+
+    color:#0087c8;
+
+    font-size:26px;
 
     font-weight:600;
 
-}
-/* ===========================================================
-   PART 3
-   PRINT • RESPONSIVE • ANIMATIONS • FINAL POLISH
-=========================================================== */
-
-
-/* ===========================================================
-   TABLET
-=========================================================== */
-
-@media (max-width:1200px){
-
-    .main-container{
-
-        flex-direction:column;
-
-    }
-
-    .sidebar{
-
-        width:100%;
-
-        min-height:auto;
-
-        border-right:none;
-
-        border-bottom:1px solid #d7d7d7;
-
-    }
-
-    .content{
-
-        width:100%;
-
-        padding:30px;
-
-    }
-
-    .form-row{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-    }
-
-    .form-row label{
-
-        width:100%;
-
-        margin-bottom:8px;
-
-    }
-
-    .form-row input,
-    .form-row select{
-
-        width:100%;
-
-    }
+    margin-bottom:20px;
 
 }
 
+.sidebar ul{
 
-/* ===========================================================
-   MOBILE
-=========================================================== */
-
-@media (max-width:768px){
-
-    .header{
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        height:auto;
-
-        padding:20px;
-
-        gap:20px;
-
-    }
-
-    .logo{
-
-        width:260px;
-
-    }
-
-    .contact{
-
-        width:100%;
-
-        justify-content:center;
-
-    }
-
-    .page-title{
-
-        font-size:34px;
-
-    }
-
-    .intro{
-
-        font-size:16px;
-
-    }
-
-    .verification-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
-
-/* ===========================================================
-   SMALL MOBILE
-=========================================================== */
-
-@media (max-width:480px){
-
-    .content{
-
-        padding:20px;
-
-    }
-
-    .page-title{
-
-        font-size:28px;
-
-    }
-
-    .check-btn{
-
-        width:100%;
-
-    }
-
-    .print-btn{
-
-        width:100%;
-
-        text-align:center;
-
-    }
-
-}
-
-
-/* ===========================================================
-   HOVER EFFECTS
-=========================================================== */
-
-input:hover,
-select:hover{
-
-    border-color:#0099CC;
+    list-style:none;
 
 }
 
 .sidebar li{
 
-    transition:.30s;
+    padding:10px 6px;
+
+    font-size:16px;
+
+    color:#333;
+
+    cursor:pointer;
+
+    transition:.25s;
 
 }
 
 .sidebar li:hover{
 
-    background:#d2edf9;
+    background:#cfeaf7;
 
-    border-radius:4px;
+}
+
+.sidebar li.active{
+
+    color:#0087c8;
+
+    font-weight:600;
 
 }
 
 
 /* ===========================================================
-   SMOOTH FADE
+   CONTENT
 =========================================================== */
 
 .content{
 
-    animation:fadeIn .5s ease;
+    flex:1;
 
-}
+    background:#ffffff;
 
-@keyframes fadeIn{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(10px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
+    padding:40px;
 
 }
 
 
 /* ===========================================================
-   PDF VIEWER
+   PAGE TITLE
 =========================================================== */
 
-.result-area iframe{
+.page-title{
 
-    animation:fadeIn .35s ease;
+    color:#0087c8;
+
+    font-size:46px;
+
+    font-weight:300;
+
+    margin-bottom:30px;
 
 }
 
 
 /* ===========================================================
-   SCROLLBAR
+   INTRO
 =========================================================== */
 
-::-webkit-scrollbar{
+.intro{
 
-    width:10px;
+    font-size:18px;
 
-}
+    color:#444;
 
-::-webkit-scrollbar-track{
-
-    background:#eeeeee;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#0099CC;
-
-    border-radius:30px;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-
-    background:#007cab;
-
-}
-
-
-/* ===========================================================
-   PRINT
-=========================================================== */
-
-@media print{
-
-    body{
-
-        background:white;
-
-    }
-
-    .header,
-    .breadcrumb,
-    .sidebar,
-    .form-area,
-    .check-btn,
-    .contact{
-
-        display:none !important;
-
-    }
-
-    .content{
-
-        width:100%;
-
-        padding:0;
-
-        margin:0;
-
-    }
-
-    .page-title,
-    .intro{
-
-        display:none;
-
-    }
-
-    .verification-card{
-
-        border:none;
-
-        padding:0;
-
-        margin:0 0 20px 0;
-
-    }
-
-    iframe{
-
-        width:100%;
-
-        height:100vh;
-
-        border:none;
-
-    }
-
-}
-
-
-/* ===========================================================
-   FINAL POLISH
-=========================================================== */
-
-button,
-input,
-select{
-
-    font-family:"Segoe UI",Arial,sans-serif;
-
-}
-
-button{
-
-    outline:none;
-
-}
-
-input,
-select{
-
-    outline:none;
-
-}
-
-.result-area{
-
-    animation:fadeIn .4s ease;
-
-}
-
-.success::before{
-
-    content:"✔ ";
-
-}
-
-.error::before{
-
-    content:"✖ ";
-
-}
-
-.print-btn{
-
-    box-shadow:0 4px 10px rgba(0,0,0,.15);
-
-}
-
-.check-btn{
-
-    box-shadow:0 4px 10px rgba(0,0,0,.15);
-
-}
-
-.header{
-
-    position:sticky;
-
-    top:0;
-
-    z-index:1000;
-
-}
-
-.sidebar{
-
-    position:sticky;
-
-    top:120px;
-
-}
-
-.logo{
-
-    user-select:none;
-
-}
-
-.check-btn,
-.print-btn{
-
-    letter-spacing:.3px;
-
-}
-
-.verification-card{
-
-    box-shadow:0 3px 12px rgba(0,0,0,.08);
-
-}
-
-.form-area{
-
-    animation:fadeIn .5s ease;
+    margin-bottom:18px;
 
 }
