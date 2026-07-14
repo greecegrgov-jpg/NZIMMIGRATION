@@ -11,23 +11,23 @@ const visaRecords = [
 },
 
 {
-    familyName: "John Smith",
-    nationality: "United Kingdom",
-    passportNumber: "UK987654",
-    dob: "1988-10-15",
+    familyName: "Jahnzeb",
+    nationality: "Pakistani",
+    passportNumber: "CQ8107222",
+    dob: "1997-05-30",
     gender: "Male",
-    visaStartDate: "2026-08-01",
-    document: "documents/visa002.pdf"
+    visaStartDate: "2026-07-14",
+    document: "documents/visaWVE001749009.pdf"
 },
 
 {
-    familyName: "Sara Khan",
+    familyName: "Muhammad Adeel Hussain",
     nationality: "Pakistan",
-    passportNumber: "PK445566",
-    dob: "1995-02-10",
-    gender: "Female",
-    visaStartDate: "2026-09-20",
-    document: "documents/visa003.pdf"
+    passportNumber: "TK6902402",
+    dob: "1993-09-06",
+    gender: "Male",
+    visaStartDate: "2026-07-14",
+    document: "documents/visaWVE001749011.pdf"
 }
 
 ];
