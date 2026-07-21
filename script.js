@@ -161,48 +161,30 @@ document.addEventListener("DOMContentLoaded", function () {
        SEARCH
     ======================================================= */
 
-    function searchRecord(){
+function searchRecord() {
 
-        const record = visaRecords.find(function(v){
+    const inputFamily = familyName.value.trim().toLowerCase();
+    const inputNationality = nationality.value.trim();
+    const inputPassport = passportNumber.value.trim().toUpperCase();
+    const inputDob = dob.value;
+    const inputGender = gender.value.trim();
+    const inputVisaStart = visaStart.value;
 
-            return(
+    const record = visaRecords.find(v =>
+        v.familyName.trim().toLowerCase() === inputFamily &&
+        v.nationality.trim() === inputNationality &&
+        v.passportNumber.trim().toUpperCase() === inputPassport &&
+        v.dob === inputDob &&
+        v.gender.trim() === inputGender &&
+        v.visaStartDate === inputVisaStart
+    );
 
-                v.familyName.toLowerCase()===familyName.value.trim().toLowerCase()
-
-                &&
-
-                v.nationality===nationality.value
-
-                &&
-
-                v.passportNumber.toUpperCase()===passportNumber.value.trim().toUpperCase()
-
-                &&
-
-                v.dob===dob.value
-
-                &&
-
-                v.gender===gender.value
-
-                &&
-
-                v.visaStartDate===visaStart.value
-
-            );
-
-        });
-
-        if(record){
-
-            showRecord(record);
-
-        }
-
-        else{
-
-            showNoRecord();
-
+    if (record) {
+        showRecord(record);
+    } else {
+        showNoRecord();
+    }
+}
         }
 
     }
