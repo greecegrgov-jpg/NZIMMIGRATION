@@ -12,7 +12,7 @@ const visaRecords = [
 
 {
     familyName: "Jahnzeb",
-    nationality: "Pakistani",
+    nationality: "Pakistan",
     passportNumber: "CQ8107222",
     dob: "1997-05-30",
     gender: "Male",
