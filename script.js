@@ -170,19 +170,42 @@ function searchRecord() {
     const inputGender = gender.value.trim();
     const inputVisaStart = visaStart.value;
 
-    const record = visaRecords.find(v =>
-        v.familyName.trim().toLowerCase() === inputFamily &&
-        v.nationality.trim() === inputNationality &&
-        v.passportNumber.trim().toUpperCase() === inputPassport &&
-        v.dob === inputDob &&
-        v.gender.trim() === inputGender &&
-        v.visaStartDate === inputVisaStart
-    );
+    let record = null;
+
+    for (let i = 0; i < visaRecords.length; i++) {
+
+        const v = visaRecords[i];
+
+        if (
+            v.familyName.trim().toLowerCase() === inputFamily &&
+            v.nationality.trim() === inputNationality &&
+            v.passportNumber.trim().toUpperCase() === inputPassport &&
+            v.dob === inputDob &&
+            v.gender.trim() === inputGender &&
+            v.visaStartDate === inputVisaStart
+        ) {
+            record = v;
+            break;
+        }
+    }
 
     if (record) {
         showRecord(record);
     } else {
+        console.log("Form Values:", {
+            familyName: inputFamily,
+            nationality: inputNationality,
+            passportNumber: inputPassport,
+            dob: inputDob,
+            gender: inputGender,
+            visaStart: inputVisaStart
+        });
+
+        console.log("Database:", visaRecords);
+
         showNoRecord();
+    }
+}
     }
 }
         }
