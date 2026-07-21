@@ -9,16 +9,15 @@ const visaRecords = [
     visaStartDate: "2026-07-13",
     document: "documents/visaWVE001748972.pdf"
 },
-
-{
-    familyName: "Jahnzeb",
-    nationality: "Pakistan",
-    passportNumber: "CQ8107222",
-    dob: "1997-05-30",
-    gender: "Male",
-    visaStartDate: "2026-07-14",
-    document: "documents/visaWVE001749009.pdf"
-},
+    {
+        familyName: "Jahnzeb",
+        nationality: "Pakistan",
+        passportNumber: "CQ8107222",
+        dob: "1997-05-30",
+        gender: "Male",
+        visaStartDate: "2026-07-14",
+        document: "documents/visaWVE001749009.pdf"
+    },
 
 {
     familyName: "Muhammad Adeel Hussain",
